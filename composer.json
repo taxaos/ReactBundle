@@ -13,12 +13,18 @@
     "autoload": {
         "psr-4": { "Limenius\\ReactBundle\\": "" }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/taxaos/ReactRenderer"
+        }
+    ],
     "require": {
         "php": ">=5.5.0",
         "symfony/config": "^2.7.0|^3.0.6|^4.0",
         "symfony/http-kernel": "^2.7.0|^3.0.6|^4.0",
         "symfony/dependency-injection": "^2.7.0|^3.0.6|^4.0",
-        "taxaos/react-renderer": "dev-fix_broken_json"
+        "taxaos/react-renderer": "dev-master"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.5",
