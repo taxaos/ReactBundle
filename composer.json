@@ -1,5 +1,5 @@
 {
-    "name": "limenius/react-bundle",
+    "name": "taxaos/react-bundle",
     "description": "Client and Server-side react rendering in a Symfony Bundle",
     "type": "symfony-bundle",
     "keywords": ["react", "isomorphic"],
@@ -13,12 +13,18 @@
     "autoload": {
         "psr-4": { "Limenius\\ReactBundle\\": "" }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/taxaos/ReactRenderer"
+        }
+    ],
     "require": {
         "php": ">=5.5.0",
         "symfony/config": "^2.7.0|^3.0.6|^4.0",
         "symfony/http-kernel": "^2.7.0|^3.0.6|^4.0",
         "symfony/dependency-injection": "^2.7.0|^3.0.6|^4.0",
-        "limenius/react-renderer": "^2.0@dev"
+        "taxaos/react-renderer": "2.4.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.5",
